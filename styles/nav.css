@@ -10,6 +10,7 @@
     justify-content: space-between;
     align-items: center;
     font-weight: bold;
+
 }
 
 .logo a{
@@ -17,7 +18,7 @@
     letter-spacing: 2px;
     font-size: var(--font-size-medium);
     transition: 0.7s;
-    color: var(--text-color-2);
+    color: var(--text-color);
 }
 
 #main-header nav{
@@ -147,10 +148,6 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
-    }
-
-    .logo a{
-        color: var(--text-color);
     }
 
     .nav-items li a{
