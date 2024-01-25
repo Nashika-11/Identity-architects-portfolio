@@ -1,0 +1,45 @@
+footer{
+    background: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 3rem;
+    gap: 2rem;
+}
+
+footer .logo, footer p, footer li, footer i{
+    color: var(--text-color-2);
+}
+
+footer i{
+    margin-right: 8px;
+}
+
+footer .services h2{
+    color: var(--text-color-2);
+    text-transform: uppercase;
+    font-size: var(--font-size-medium);
+    margin-bottom: 6px;
+    text-decoration: underline;
+}
+
+footer .contact{
+    width: 80%;
+}
+
+footer li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 48rem) {
+    footer{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    footer .contact{
+        width: auto;
+    }
+}

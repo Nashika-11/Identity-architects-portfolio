@@ -1,0 +1,117 @@
+#services{
+    display: grid;
+    align-items: center;
+    max-width: 85%;
+    margin: 3rem auto;
+}
+
+#services .title span, #contact .title span{
+    background: var(--text-color);
+    width: 50px;
+    height: 1px;
+    margin: 0.32rem 0;
+    display: inline-block;
+}
+
+#services .caption, #contact .caption{
+    margin-bottom: 1rem;
+    font-size: var(--font-size-medium);
+    font-weight: bold;
+}
+
+#services .services, .contacts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.service{
+    width: 280px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+    box-shadow: 4px 4px 8px rgb(186, 204, 224),
+    -4px -4px 8px rgb(255 255 255);
+    background: var(--bg-color);
+}
+
+.service i{
+    font-size: var(--font-size-xtra-big);
+}
+
+#vision{
+    width: 100%;
+    background: url("https://res.cloudinary.com/duqweg9fr/image/upload/v1706012504/Architecture/56eab29c1653ae6053fac51567c63210_ra1i2m.jpg")no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    margin-top: 1rem;
+    position: relative;
+}
+
+#vision div{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.637);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+
+#vision div>*{
+    color: var(--text-color-2);
+    margin-bottom: 1rem;
+}
+
+
+
+#contact{
+    margin: 9rem auto;
+    max-width: 80%;
+}
+
+#contact .caption{
+    margin-bottom: 1.5rem;
+}
+
+.contacts li{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contacts li p{
+    width: 20ch;
+}
+
+.contacts i{
+    font-size: var(--font-size-big) ;
+}
+
+@media (min-width: 48rem) {
+
+    #vision div>*:not(#vision .btn){
+        width: 50%;
+    }
+    
+#contact .title, #contact .caption{
+    text-align: center;
+}
+
+    .contacts li{
+    flex-direction: column;
+    text-align: center;
+    }
+
+}

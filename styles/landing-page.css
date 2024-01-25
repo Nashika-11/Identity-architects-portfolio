@@ -1,0 +1,88 @@
+#landing-page{
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    min-height:100vh;
+    position: relative;
+}
+
+#landing-page .hero-img{
+    width: 70%;
+    background: url("https://res.cloudinary.com/duqweg9fr/image/upload/v1706012504/Architecture/56eab29c1653ae6053fac51567c63210_ra1i2m.jpg"),no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: -8rem;
+    position: relative;
+}
+
+#landing-page .hero-img::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.521);
+    position: absolute;
+    z-index: 2;
+}
+
+#landing-page .content{
+    margin-top: -8rem;
+    width: 50%;
+    padding-left: 1rem;
+    z-index: 100;
+    position: relative;
+}
+
+#landing-page .content > *:not(h1:nth-of-type(1)){
+    margin-bottom: 1rem;
+}
+
+#landing-page .title:not(#landing-page .title:nth-of-type(2)){
+    font-weight: 1000;
+    background: url("https://res.cloudinary.com/duqweg9fr/image/upload/v1704431976/real-estate/ohfm9epmrypaevsflbgf.jpg"),no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#landing-page .title{
+    font-size: var(--font-size-big);
+}
+
+#landing-page .social-icons{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+#landing-page .social-icons i{
+    font-size: var(--font-size-medium);
+    cursor: pointer;
+    transition: 1s;
+}
+
+#landing-page .social-icons i:hover{
+    transform: scale(1.1);
+}
+
+@media (min-width: 48rem) {
+
+    #landing-page .content{
+        padding-left: 4rem;
+    }
+
+    #landing-page .title{
+        font-size: var(--font-size-xtra-big);
+    }
+
+    #landing-page .title:nth-of-type(2){
+        letter-spacing: 3px;
+    }
+
+    #landing-page .social-icons i{
+        font-size: 1.5rem;
+    }
+}
+
